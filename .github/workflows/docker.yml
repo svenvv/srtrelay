@@ -27,10 +27,10 @@ jobs:
         push: true
         tags: ghcr.io/svenvv/srtrelay/srtrelay:latest
     
-    - name: Delete old containers
-      uses: actions/delete-package-versions@v4
-      with: 
-        package-name: 'srtrelay'
-        package-type: 'container'
-        min-versions-to-keep: 10
-        delete-only-untagged-versions: 'true'
+   # - name: Delete old containers
+   #   uses: actions/delete-package-versions@v4
+   #   with: 
+   #     package-name: 'srtrelay'
+   #     package-type: 'container'
+   #     min-versions-to-keep: 10
+   #     delete-only-untagged-versions: 'true'
